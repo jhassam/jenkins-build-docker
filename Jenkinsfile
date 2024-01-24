@@ -1,6 +1,6 @@
 def pipelineContext = [:] 
 node{
-    def registryProject='registry.gitlab.com/jhassam/docker-images'
+    def registryProject='registry.gitlab.com/jhassam/docker-images/nginx'
     def IMAGE="${registryProject}:version-${env.BUILD_ID}"
 
     stage ('Clone'){
